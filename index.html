@@ -24,6 +24,7 @@
             font-size: 18px !important;
         }
 
+        /*
         header {
             position: relative;
             background-color: black;
@@ -63,7 +64,7 @@
             opacity: 0.5;
             z-index: 1;
         }
-
+        */
         .showcase .showcase-text {
             padding: 3rem;
         }
@@ -105,6 +106,28 @@
             font-size: 18px;
         }
 
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-color: #080d15;
+            opacity: .4;
+        }
+
+        header {
+            height: 100vh;
+            background-image: url('https://images.pexels.com/photos/258160/pexels-photo-258160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            /* flex-box thing */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-bottom: 30px;
+        }
+
+        /*
         @media (pointer: coarse) and (hover: none) {
             header {
                 background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
@@ -114,6 +137,7 @@
                 display: none;
             }
         }
+        */
     </style>
 </head>
 
@@ -142,35 +166,19 @@
             </div>
         </div>
     </nav>
-    <!--
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Company Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white" style="z-index: 3">
+                    <h1 class="header-title">Company Name</h1>
+                    <p class="header-subtitle">Company Description</p>
+                    <button type="button" class="btn header-btn">Watch Our Story</button>
+                </div>
             </div>
         </div>
-    </nav>
-    -->
+    </header>
+    <!--
     <header id="page-top">
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -186,15 +194,15 @@
             </div>
         </div>
     </header>
+    -->
 
-    <!-- Image Showcases -->
     <section id="services" class="showcase">
         <div class="container">
             <div class="row">
-                <div class="col-md-12" style="padding-bottom: 20px;">
+                <div class="col-md-12" style="padding-bottom: 30px">
                     <div class="text-center align-items-center">
-                            <h2 style="padding-bottom: 30px;">Services</h2>
-                            <p style="padding-bottom: 100px;" class="lead mb-0">Services Description</p>
+                        <h2 style="padding-bottom: 30px;">Services</h2>
+                        <p style="padding-bottom: 100px;" class="lead mb-0">Services Description</p>
                     </div>
                 </div>
             </div>
@@ -237,7 +245,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="text-white text-center" style="padding-bottom: 30px;">ABOUT US</h2>
-                    <p class="text-white text-center lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <p class="text-white text-center lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra
                         maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
