@@ -3,157 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Demo Design</title>
-    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>McTRIC Company</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link href="css/scrolling-nav.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Prompt', sans-serif;
-        }
-
-        .navbar {
-            background-color: #08192d !important;
-            padding: 10px;
-        }
-
-        .navbar-expand-lg .navbar-nav .nav-link {
-            padding-right: 20px;
-            padding-left: 20px;
-            font-size: 18px !important;
-        }
-
-        /*
-        header {
-            position: relative;
-            background-color: black;
-            height: 100vh;
-            min-height: 25rem;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        header video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: 0;
-            -ms-transform: translateX(-50%) translateY(-50%);
-            -moz-transform: translateX(-50%) translateY(-50%);
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-        }
-
-        header .container {
-            position: relative;
-            z-index: 2;
-        }
-
-        header .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: black;
-            opacity: 0.5;
-            z-index: 1;
-        }
-        */
-        .showcase .showcase-text {
-            padding: 3rem;
-        }
-
-        .showcase .showcase-img {
-            min-height: 30rem;
-            background-size: cover;
-        }
-
-        .text-white {
-            color: white;
-        }
-
-        .bg-white {
-            background-color: white;
-        }
-
-        .header-btn {
-            display: inline-block;
-            border: none;
-            font-size: 14px;
-            font-weight: 500;
-            min-width: 195px;
-            padding: 15px 20px;
-            border-radius: 50px;
-            text-transform: uppercase;
-            background: #fc0254;
-            color: #fff;
-            line-height: normal;
-            cursor: pointer;
-            text-align: center;
-        }
-
-        .header-title {
-            font-size: 80px;
-        }
-
-        .header-subtitle {
-            font-size: 18px;
-        }
-
-        header {
-            height: 100vh;
-            background-image: url('https://images.pexels.com/photos/258160/pexels-photo-258160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-            /* flex-box thing */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-size: cover;
-            margin-bottom: 30px;
-        }
-
-        .overlay {
-            position: absolute;
-            width: 100%;
-            /*height: 100%;*/
-            height: 100vh;
-            z-index: 2;
-            background-color: #080d15;
-            opacity: .4;
-        }
-
-        @media only screen and (max-width: 767px) {
-            .header-title {
-                font-size: 36px;
-            }
-        }
-
-        /*
-        @media (pointer: coarse) and (hover: none) {
-            header {
-                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-            }
-
-            header video {
-                display: none;
-            }
-        }
-        */
-    </style>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo-company"
                     src="http://mctric.com/assets/img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -161,11 +26,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#services">Services</a>
                     </li>
+                    -->
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#careers">Careers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -177,11 +47,11 @@
     <header id="page-top">
         <div class="overlay"></div>
         <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
+            <div class="d-flex h-100 text-center align-items-center" style="padding-top: 60px;">
                 <div class="w-100 text-white" style="z-index: 3">
-                    <h1 class="header-title">Company Name</h1>
-                    <p class="header-subtitle">Company Description</p>
-                    <button type="button" class="btn header-btn">Watch Our Story</button>
+                    <h1 class="header-title">McTRIC Public <br> Company</h1>
+                    <!--<p class="header-subtitle">Company Description</p>-->
+                    <button type="button" class="btn header-btn"><i class="fas fa-play-circle fa-lg"></i> Watch Our Story</button>
                 </div>
             </div>
         </div>
@@ -203,14 +73,13 @@
         </div>
     </header>
     -->
-
+    <!--
     <section id="services" class="showcase">
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="padding-bottom: 30px">
                     <div class="text-center align-items-center">
-                        <h2 style="padding-bottom: 30px;">Services</h2>
-                        <p style="padding-bottom: 100px;" class="lead mb-0">Services Description</p>
+                        <h2 style="padding-bottom: 30px;">SERVICES</h2>
                     </div>
                 </div>
             </div>
@@ -219,7 +88,7 @@
                         background-size: cover;"></div>
                 <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                     <h2>Example service</h2>
-                    <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.</p>
                 </div>
@@ -230,7 +99,7 @@
                 </div>
                 <div class="col-lg-6 my-auto showcase-text">
                     <h2>Example service</h2>
-                    <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.</p>
                 </div>
@@ -240,20 +109,20 @@
                         background-size: cover;"></div>
                 <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                     <h2>Example service</h2>
-                    <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="about" style="background: #0a183d;">
+    -->
+    <section id="about" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-white text-center" style="padding-bottom: 30px;">ABOUT US</h2>
-                    <p class="text-white text-center lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    <h1 class="text-center" style="padding-bottom: 30px;">ABOUT</h1>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra
                         maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -264,11 +133,44 @@
         </div>
     </section>
 
+    <section id="careers" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-white text-center" style="padding-bottom: 30px;">CAREERS</h1>
+                    <p class="text-white text-center" style="padding-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis.</p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="height: 250px; width: 100%;">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/209719/pexels-photo-209719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="height: 250px; width: 100%;">
+
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/2422293/pexels-photo-2422293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="height: 250px; width: 100%;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center align-items-center">
+                        <button type="button" class="btn header-btn">See All jobs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="padding-bottom: 30px;">
-                    <h2 class="text-center">Contact us</h2>
+                    <h1 class="text-center">CONTACT</h1>
                 </div>
                 <div class="col-md-6">
                     <iframe class="resp-iframe"
@@ -294,7 +196,7 @@
     <!-- Footer -->
     <footer class="py-5" style="background-color: #08192d !important">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+            <p class="m-0 text-center text-white">Copyright &copy; 2019 - McTRIC Public Co.,Ltd.</p>
         </div>
         <!-- /.container -->
     </footer>
