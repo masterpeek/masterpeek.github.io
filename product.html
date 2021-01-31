@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LERTYAPHAN</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=prompt:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <style>
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .img-wrap img {
+            height: 100%;
+            max-width: 100%;
+            width: auto;
+            display: inline-block;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .img-wrap {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-product-grid {
+            margin-bottom: 20px;
+        }
+
+        .card-product-grid .img-wrap {
+            border-radius: 0.2rem 0.2rem 0 0;
+            height: 220px;
+        }
+
+
+        .card-product-grid:hover {
+            box-shadow: 0 4px 15px rgb(153 153 153 / 30%);
+            transition: 0.3s;
+        }
+
+        .card-product-grid .info-wrap {
+            overflow: hidden;
+            padding: 18px 20px;
+        }
+
+        .card-product-grid .fix-height {
+            height: 80px;
+            overflow: hidden;
+        }
+
+        .card .img-wrap {
+            overflow: hidden;
+        }
+
+        .img-wrap {
+            text-align: center;
+            display: block;
+        }
+
+        a.title {
+            color: #212529;
+            display: block;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #212529;
+        }
+
+        figcaption {
+            padding: 15px;
+            background: #FFF;
+        }
+
+        .filter-group {
+            border-bottom: 1px solid #e4e4e4;
+        }
+
+        .filter-group .card-header {
+            border-bottom: 0;
+        }
+
+        .icon-control {
+            margin-top: 5px;
+            float: right;
+            font-size: 80%;
+        }
+
+        .card-header .title {
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        .list-menu {
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .list-menu li {
+    margin-bottom: 5px;
+}
+
+.filter-content > .card-body {
+    padding-top: 0px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg static-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" style="width: 60px; height: 60px;">
+                    <!--<i class="fa fa-plus-square"></i>--> เลิศยาภัณฑ์
+                </a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="product.html">สินค้า</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">โปรโมชัน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">บริการลูกค้า</a>
+                    </li>
+                </ul>
+                <div class="input-group mr-auto" style="width: 40%;">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="widget-header mr-3">
+                    <a href="shopping_cart.html" class="icon icon-sm rounded-circle border">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="badge badge-pill badge-danger notify">1</span>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="icon icon-sm rounded-circle border" data-toggle="dropdown"><i class="fas fa-user"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">บัญชีของฉัน</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">การซื้อของฉัน</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ออกจากระบบ</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1>BANNER</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section style="background: #FFF;">
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-3">
+                    <div class="card">
+                        <article class="filter-group">
+                            <header class="card-header">
+                                <a href="#" data-toggle="collapse" data-target="#collapse_1">
+                                    <i class="icon-control fa fa-chevron-down"></i>
+                                    <h6>ประเภทสินค้า</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content show collapse" id="collapse_1">
+                                <div class="card-body">
+                                    <ul class="list-menu">
+                                        <li>
+                                            <a href="#">เวชภัณฑ์</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">หน้ากากและหน้ากากป้องกันฝุ่น</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ผลิตภัณฑ์บรรเทาอาการบาดเจ็บ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">อุปกรณ์ทดสอบด้านสุขภาพ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ชุดผลิตภัณฑ์อาหารเสริมสุขภาพ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">อาหารเสริมสำหรับผู้ชาย</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">อาหารเสริมบำรุงผิว</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">อาหารเสริมวิตามินรวม</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">อาหารเสริมเพื่อสุขภาพทางเพศ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="filter-group">
+                            <header class="card-header">
+                                <a href="#" data-toggle="collapse" data-target="#collapse_2">
+                                    <i class="icon-control fa fa-chevron-down"></i>
+                                    <h6>ราคา</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content show collapse" id="collapse_2">
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>ต่ำสุด</label>
+                                            <input type="number" class="form-control" placeholder="0" min="0"
+                                                max="5000">
+                                        </div>
+                                        <div class="form-group text-right col-md-6">
+                                            <label>สูงสุด</label>
+                                            <input type="number" class="form-control" placeholder="5000" min="0"
+                                                max="5000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </aside>
+                <main class="col-md-9">
+                    <header class="section-heading">
+                        <h3 class="section-title">เวชภัณฑ์</h3>
+                    </header>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-product-grid">
+                                <a href="" class="img-wrap">
+                                    <img src="https://m2.ukmeds.co.uk/media/catalog/product/cache/0fa74f79104c51d256533821159b596d/f/e/fexofenadine-180mg-2.jpg">
+                                </a>
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product_detail.html" class="title">
+                                            Telfast Tablets 180mg
+                                        </a>
+                                        <div class="price mt-1">฿180</div>
+                                    </div>
+                                    <a href="#" class="btn btn-block btn-primary">เพิ่มใส่ตระกร้า</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-product-grid">
+                                <a href="" class="img-wrap">
+                                    <img src="img/login.png">
+                                </a>
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product_detail.html" class="title">
+                                            สินค้า1
+                                        </a>
+                                        <div class="price mt-1">1000</div>
+                                    </div>
+                                    <a href="#" class="btn btn-block btn-primary">เพิ่มใส่ตระกร้า</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-product-grid">
+                                <a href="" class="img-wrap">
+                                    <img src="img/login.png">
+                                </a>
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product_detail.html" class="title">
+                                            สินค้า1
+                                        </a>
+                                        <div class="price mt-1">1000</div>
+                                    </div>
+                                    <a href="#" class="btn btn-block btn-primary">เพิ่มใส่ตระกร้า</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-product-grid">
+                                <a href="" class="img-wrap">
+                                    <img src="img/login.png">
+                                </a>
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product_detail.html" class="title">
+                                            สินค้า1
+                                        </a>
+                                        <div class="price mt-1">1000</div>
+                                    </div>
+                                    <a href="#" class="btn btn-block btn-primary">เพิ่มใส่ตระกร้า</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-product-grid">
+                                <a href="" class="img-wrap">
+                                    <img src="img/login.png">
+                                </a>
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product_detail.html" class="title">
+                                            สินค้า1
+                                        </a>
+                                        <div class="price mt-1">1000</div>
+                                    </div>
+                                    <a href="#" class="btn btn-block btn-primary">เพิ่มใส่ตระกร้า</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-product-grid">
+                                <a href="" class="img-wrap">
+                                    <img src="img/login.png">
+                                </a>
+                                <figcaption class="info-wrap">
+                                    <div class="fix-height">
+                                        <a href="product_detail.html" class="title">
+                                            สินค้า1
+                                        </a>
+                                        <div class="price mt-1">1000</div>
+                                    </div>
+                                    <a href="#" class="btn btn-block btn-primary">เพิ่มใส่ตระกร้า</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="pagination mt-4">
+                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">ก่อน</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">ถัดไป</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
