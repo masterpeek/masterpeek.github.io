@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Prompt', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #F1F1F1;
+  background: #f8f9fa;
     position: relative;
     margin: 0;
     padding: 0;
@@ -80,6 +80,10 @@ nav {
 section {
   padding: 70px 0;
   display: block;
+}
+
+.showcase {
+  padding: 0px !important;
 }
 
 .card .content {
@@ -298,8 +302,8 @@ figure {
 
 .call-to-action {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: linear-gradient(180deg , #51bbed, #0000ab);
+  /*background: url("../img/bg-masthead.jpg") no-repeat center center;*/
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
