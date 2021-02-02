@@ -224,14 +224,16 @@ figure {
 .btn-light {
   background-color: #fff;
   border-color: #e4e4e4;
-  min-width: 100px;
 }
 
 .btn-danger {
   background-color: #fff;
   border-color: #dc3545;
   color: #dc3545;
-  min-width: 100px;
+}
+
+.promotion-date {
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {

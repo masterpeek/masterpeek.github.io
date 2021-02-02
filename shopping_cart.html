@@ -13,6 +13,9 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
@@ -43,14 +46,14 @@
                         <a class="nav-link" href="product.html">สินค้า</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">โปรโมชัน</a>
+                        <a class="nav-link" href="promotion.html">โปรโมชัน</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">บริการลูกค้า</a>
                     </li>
                 </ul>
                 <div class="input-group mr-auto" style="width: 40%;">
-                    <input type="text" class="form-control" placeholder="Search...">
+                    <input type="text" class="form-control" placeholder="ค้นหา...">
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
                     </div>
@@ -96,7 +99,7 @@
                                     <th width="120">
                                         จำนวน
                                     </th>
-                                    <th class="text-right" width="200">
+                                    <th class="text-right">
 
                                     </th>
                                 </tr>
@@ -170,10 +173,18 @@
                     </div>
                 </main>
                 <aside class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5>การชำระเงิน</h5>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>คูปองส่วนลด</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="รหัสคูปอง">
+                                    <span class="input-group-append"><button class="btn btn-primary">ยืนยัน</button></span>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="card">
                         <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-md-6">
@@ -181,6 +192,14 @@
                                 </div>
                                 <div class="col-md-6 text-right">
                                     ฿1,200
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label>ส่วนลด</label>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    ฿0
                                 </div>
                             </div>
                             <div class="row mb-3">
