@@ -236,6 +236,139 @@ figure {
   font-weight: 300;
 }
 
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 600px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#sidebar {
+  min-width: 300px;
+  max-width: 300px;
+  background: #2e6bd3;
+  color: #FFF;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#sidebar .logo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+#sidebar ul li {
+  font-size: 16px;
+}
+
+#sidebar ul li a {
+  padding: 10px 0;
+  display: block;
+  color: #FFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#sidebar ul li > ul {
+  margin-left: 10px;
+}
+
+#profile-wrapper {
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#profile-wrapper .profile-img-wrapper .profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer; 
+}
+
+#profile-wrapper .profile-img-wrapper .profile-btn {
+  margin: 20px 0;                             
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.profile-img-wrapper {
+  height: 150px;
+                            width: 150px;
+                            margin: 20px 0;
+                            position: relative;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -moz-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-align: center;
+                            -webkit-align-items: center;
+                            -moz-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: center;
+                            -webkit-justify-content: center;
+                            -moz-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #2e6bd3;
+}
+
+.order-success {
+  color: #00b517;
+  font-weight: 400;
+}
+
+.order-waiting {
+  color: orange;
+  font-weight: 400;
+}
+
+.order-cancel {
+  color: #dc3545;
+  font-weight: 400;
+}
+
+@media (max-width: 991.98px) {
+  #sidebar {
+    margin-left: -300px;
+}
+}
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
