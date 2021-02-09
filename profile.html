@@ -25,14 +25,24 @@
     <!-- Custom styles for this template -->
     <link href="css/landing-page.css" rel="stylesheet">
 </head>
+<style>
+    #content {
+        margin: 50px;
+    }
 
+    @media (max-width: 767.98px) {
+        #content {
+            margin: 0px;
+    }
+}
+</style>
 <body>
-       <!-- Navigation -->
-       <nav class="navbar navbar-expand-lg static-top">
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-expand-md static-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" style="width: 60px; height: 60px;">
@@ -49,7 +59,7 @@
                         <a class="nav-link" href="#">บริการลูกค้า</a>
                     </li>
                 </ul>
-                <div class="input-group mr-auto" style="width: 40%;">
+                <div class="input-group mr-auto" id="search-nav">
                     <input type="text" class="form-control" placeholder="ค้นหา...">
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
@@ -62,15 +72,32 @@
                     </a>
                 </div>
                 <div class="btn-group">
-                    <a href="#" class="icon icon-sm rounded-circle border" data-toggle="dropdown"><i class="fas fa-user"></i></a>
+                    <a href="#" class="icon icon-sm rounded-circle border" data-toggle="dropdown"><i
+                            class="fas fa-user"></i></a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="profile.html">บัญชีของฉัน</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="purchase.html">การซื้อของฉัน</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="login.html">ออกจากระบบ</a>
-                      </div>
+                    </div>
                 </div>
+                <ul class="navbar-nav mx-auto" id="menu-nav">
+                    <hr>
+                    <li><strong>เมนู</strong></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="profile.html">ข้อมูลส่วนตัว</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="address.html">ที่อยู่</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="password.html">รหัสผ่าน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="purchase.html">การซื้อของฉัน</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -103,7 +130,7 @@
                 </ul>
             </div>
         </nav>
-        <nav id="content" style="margin: 50px;">
+        <nav id="content">
             <div style="padding: 50px;">
                 <div class="row">
                     <div class="col-md-12">
@@ -111,7 +138,7 @@
                         <span>จัดการข้อมูลส่วนตัวคุณเพื่อความปลอดภัยของบัญชีผู้ใช้นี้</span>
                         <hr>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12 col-lg-6">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -139,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12 col-lg-6">
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="profile-wrapper" class="form-group">
@@ -158,7 +185,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2" style="margin-top: 15px;">
+                    <div class="col-md-12 col-lg-6" style="margin-top: 15px;">
                         <button class="btn btn-primary btn-block">ยืนยัน</button>
                     </div>
                 </div>
