@@ -26,19 +26,37 @@
     <link href="css/landing-page.css" rel="stylesheet">
 </head>
 <style>
-     #content {
+    #content {
         margin: 50px;
+    }
+
+    .header-button-wrapper {
+            float: right;
     }
 
     .product-img {
         height: 100px;
     }
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 991.98px) {
+        #sidebar {
+            margin-left: -300px;
+        }
+
         #content {
             margin: 0px;
+        }
     }
-}
+
+    @media (max-width: 767.98px) {
+        .header-title-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .header-button-wrapper {
+            float: unset;
+        }
+    }
 </style>
 <body>
      <!-- Navigation -->
@@ -126,15 +144,19 @@
         <nav id="content">
             <div style="padding: 50px;">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="pull-left">
+                    <div class="col-md-6">
+                        <div class="header-title-wrapper">
                             <h5 class="title">การจัดการสินค้า</h5>
                             <span>รายการสินค้าทั้งหมด</span>
                         </div>
-                        <div class="pull-right">
-                            <button type="button" class="btn btn-primary">เพิ่มสินค้า</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header-button-wrapper">
+                            <a href="create_product.html" type="button" class="btn btn-primary">เพิ่มสินค้า</a>
                         </div>
-                        <hr style="margin-top: 75px;">
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
                     </div>
                     <div class="col-md-12">
                         <div class="input-group mr-auto" style="margin-top: 10px; margin-bottom: 25px;">
@@ -156,6 +178,7 @@
                                     <th scope="col">ประเภทสินค้า</th>
                                     <th scope="col">น้ำหนัก</th>
                                     <th scope="col" class="text-right">ราคา</th>
+                                    <th scope="col" class="text-right">จำนวนสินค้า</th>
                                     <th scope="col"></th>
                                   </tr>
                                 </thead>
@@ -168,6 +191,7 @@
                                     <td>เวชภัณฑ์</td>
                                     <td>100 กรัม</td>
                                     <td class="text-right">150 บาท</td>
+                                    <td class="text-right">100</td>
                                     <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
                                   </tr>
                                   <tr>
@@ -178,6 +202,7 @@
                                     <td>เวชภัณฑ์</td>
                                     <td>100 กรัม</td>
                                     <td class="text-right">150 บาท</td>
+                                    <td class="text-right">100</td>
                                     <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
                                   </tr>
                                   <tr>
@@ -188,6 +213,7 @@
                                     <td>เวชภัณฑ์</td>
                                     <td>100 กรัม</td>
                                     <td class="text-right">150 บาท</td>
+                                    <td class="text-right">100</td>
                                     <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
                                   </tr>
                                   <tr>
@@ -198,6 +224,7 @@
                                     <td>เวชภัณฑ์</td>
                                     <td>100 กรัม</td>
                                     <td class="text-right">150 บาท</td>
+                                    <td class="text-right">100</td>
                                     <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
                                   </tr>
                                   <tr>
@@ -208,6 +235,7 @@
                                     <td>เวชภัณฑ์</td>
                                     <td>100 กรัม</td>
                                     <td class="text-right">150 บาท</td>
+                                    <td class="text-right">100</td>
                                     <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
                                   </tr>
                                   <tr>
@@ -218,6 +246,7 @@
                                     <td>เวชภัณฑ์</td>
                                     <td>100 กรัม</td>
                                     <td class="text-right">150 บาท</td>
+                                    <td class="text-right">100</td>
                                     <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
                                   </tr>
                                 </tbody>

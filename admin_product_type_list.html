@@ -30,10 +30,28 @@
         margin: 50px;
     }
 
-    @media (max-width: 767.98px) {
+    .header-button-wrapper {
+            float: right;
+    }
+
+    @media (max-width: 991.98px) {
+        #sidebar {
+            margin-left: -300px;
+        }
+
         #content {
             margin: 0px;
+        }
     }
+
+    @media (max-width: 767.98px) {
+        .header-title-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .header-button-wrapper {
+            float: unset;
+        }
 }
 </style>
 <body>
@@ -122,15 +140,19 @@
         <nav id="content">
             <div style="padding: 50px;">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="pull-left">
+                    <div class="col-md-6">
+                        <div class="header-title-wrapper">
                             <h5 class="title">การจัดการประเภทสินค้า</h5>
                             <span>รายการประเภทสินค้าทั้งหมด</span>
                         </div>
-                        <div class="pull-right">
-                            <button type="button" class="btn btn-primary">เพิ่มประเภทสินค้า</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header-button-wrapper">
+                            <a href="create_product_type.html" type="button" class="btn btn-primary">เพิ่มประเภทสินค้า</a>
                         </div>
-                        <hr style="margin-top: 75px;">
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
                     </div>
                     <div class="col-md-12">
                         <div class="input-group mr-auto" style="margin-top: 10px; margin-bottom: 25px;">

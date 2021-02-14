@@ -30,6 +30,29 @@
         margin: 50px;
     }
 
+    .header-button-wrapper {
+            float: right;
+    }
+
+    .product-img {
+        height: 100px;
+    }
+
+    .product-desc {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        .textinput {
+            float: left;
+            width: 100%;
+            min-height: 120px;
+            outline: none;
+            resize: none;
+            border: 1px solid #ced4da
+        }
+
     @media (max-width: 991.98px) {
         #sidebar {
             margin-left: -300px;
@@ -37,6 +60,16 @@
 
         #content {
             margin: 0px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .header-title-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .header-button-wrapper {
+            float: unset;
         }
     }
 </style>
@@ -127,86 +160,57 @@
             <div style="padding: 50px;">
                 <div class="row">
                     <div class="col-md-12">
-                            <h5 class="title">การจัดการประวัติคำสั่งซื้อ</h5>
-                            <span>รายการคำสั่งซื้อทั้งหมด</span>
+                        <h5 class="title">สร้างโปรโมชัน</h5>
                         <hr>
                     </div>
-                    <div class="col-md-12">
-                        <div class="input-group mr-auto" style="margin-top: 10px; margin-bottom: 25px;">
-                            <input type="text" class="form-control"
-                                placeholder="ค้นหาโดย หมายเลขคำสั่งซื้อ">
-                            <div class="input-group-append">
-                                <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>ประเภทสินค้า</label>
+                                    <select class="form-control">
+                                        <option>โปรดเลือกประเภทสินค้า</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                  <tr>
-                                    <th scope="col" width="5%">#</th>
-                                    <th scope="col">วันที่คำสั่งซื้อ</th>
-                                    <th scope="col">หมายเลขคำสั่งซื้อ</th>
-                                    <th scope="col">ลูกค้า</th>
-                                    <th scope="col" class="text-right">ยอดชำระเงิน</th>
-                                    <th scope="col" class="text-center">สถานะคำสั่งซื้อ</th>
-                                    <th scope="col"></th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>08/02/2564</td>
-                                    <td>10008996</td>
-                                    <td>ธาม บุญประเสริฐ</td>
-                                    <td class="text-right">12,000 บาท</td>
-                                    <td class="order-cancel text-center">ยกเลิก</td>
-                                    <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">2</th>
-                                    <td>05/02/2564</td>
-                                    <td>100085396</td>
-                                    <td>สมชาย ใจบุญ</td>
-                                    <td class="text-right">50,000 บาท</td>
-                                    <td class="order-waiting-confirm text-center">รอการอนุมัติ</td>
-                                    <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">3</th>
-                                    <td>03/02/2564</td>
-                                    <td>100087396</td>
-                                    <td>สมพร ใจดี</td>
-                                    <td class="text-right">20,000 บาท</td>
-                                    <td class="order-waiting-payment text-center">รอการชำระเงิน</td>
-                                    <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">4</th>
-                                    <td>02/02/2564</td>
-                                    <td>100082396</td>
-                                    <td>ธนกร รุ่งเรือง</td>
-                                    <td class="text-right">25,000 บาท</td>
-                                    <td class="order-success text-center">สำเร็จแล้ว</td>
-                                    <td class="text-center"><a href="#"><i class="fas fa-ellipsis-v"></i></a></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>ประเภทสินค้า</label>
+                                    <select class="form-control">
+                                        <option>โปรดเลือกสินค้า</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>วันเริ่มต้นโปรโมชัน</label>
+                                    <input class="form-control" id="date" name="date" placeholder="วว/ดด/ปปปป" type="text"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>วันสิ้นสุดโปรโมชัน</label>
+                                    <input class="form-control" id="date" name="date" placeholder="วว/ดด/ปปปป" type="text"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>ราคาโปรโมชัน</label>
+                                    <input type="text" value="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>จำนวนสินค้าที่จัดโปรโมชัน</label>
+                                    <input type="number" value="0" class="form-control" min="0">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <ul class="pagination mt-4">
-                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">ก่อน</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">ถัดไป</a></li>
-                        </ul>
+                    <div class="col-md-12 col-lg-6" style="margin-top: 15px;">
+                        <button class="btn btn-primary btn-block">ยืนยัน</button>
                     </div>
                 </div>
             </div>
