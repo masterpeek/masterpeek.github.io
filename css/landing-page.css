@@ -365,7 +365,12 @@ figure {
   font-weight: 400;
 }
 
-.order-waiting {
+.order-waiting-confirm {
+  color: #495057;
+  font-weight: 400;
+}
+
+.order-waiting-payment {
   color: orange;
   font-weight: 400;
 }
@@ -381,6 +386,22 @@ figure {
 
 #menu-nav {
   display: none;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 @media (max-width: 991.98px) {

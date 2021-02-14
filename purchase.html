@@ -143,7 +143,7 @@
                             <input type="text" class="form-control"
                                 placeholder="ค้นหาหมายเลขคำสั่งซื้อ หรือชื่อสินค้าทุกคำสั่งซื้อ">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                                <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
                             </div>
                         </div>
                         <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
@@ -152,16 +152,20 @@
                                     aria-controls="pills-home" aria-selected="true">ทั้งหมด</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#waiting" role="tab"
-                                    aria-controls="pills-profile" aria-selected="false">รอการชำระเงิน</a>
+                                <a class="nav-link" id="pills-waiting-confirm-tab" data-toggle="pill" href="#waiting-confirm" role="tab"
+                                    aria-controls="pills-waiting-confirm" aria-selected="false">รอการอนุมัติ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#success" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false">สำเร็จแล้ว</a>
+                                <a class="nav-link" id="pills-waiting-payment-tab" data-toggle="pill" href="#waiting-payment" role="tab"
+                                    aria-controls="pills-waiting-payment" aria-selected="false">รอการชำระเงิน</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#cancel" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false">ยกเลิกแล้ว</a>
+                                <a class="nav-link" id="pills-success-tab" data-toggle="pill" href="#success" role="tab"
+                                    aria-controls="pills-success" aria-selected="false">สำเร็จ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-cancel-tab" data-toggle="pill" href="#cancel" role="tab"
+                                    aria-controls="pills-cancel" aria-selected="false">ยกเลิก</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
@@ -173,12 +177,29 @@
                                                 <h5 class="title">หมายเลขคำสั่งซื้อ 100082396</h5>
                                                 <label>ยอดชำระเงินทั้งหมด</label>
                                                 <h5>฿1,400</h5>
-                                                <label>วันที่ 2 ก.พ. 64</label>
+                                                <label>02/02/2564</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <strong>สถานะคำสั่งซื้อ: <span
-                                                            class="order-success">สำเร็จแล้ว</span></strong>
+                                                    <strong>สถานะคำสั่งซื้อ: <span class="order-success">สำเร็จ</span></strong>
+                                                </div>
+                                                <button class="btn btn-secondary btn-block">ดูรายละเอียด</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card form-group">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h5 class="title">หมายเลขคำสั่งซื้อ 100042396</h5>
+                                                <label>ยอดชำระเงินทั้งหมด</label>
+                                                <h5>฿2,500</h5>
+                                                <label>05/02/2564</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <strong>สถานะคำสั่งซื้อ: <span class="order-waiting-confirm">รอการอนุมัติ</span></strong>
                                                 </div>
                                                 <button class="btn btn-secondary btn-block">ดูรายละเอียด</button>
                                             </div>
@@ -192,12 +213,11 @@
                                                 <h5 class="title">หมายเลขคำสั่งซื้อ 100072396</h5>
                                                 <label>ยอดชำระเงินทั้งหมด</label>
                                                 <h5>฿2,500</h5>
-                                                <label>วันที่ 5 ก.พ. 64</label>
+                                                <label>05/02/2564</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <strong>สถานะคำสั่งซื้อ: <span
-                                                            class="order-waiting">รอการชำระเงิน</span></strong>
+                                                    <strong>สถานะคำสั่งซื้อ: <span class="order-waiting-payment">รอการชำระเงิน</span></strong>
                                                 </div>
                                                 <button class="btn btn-secondary btn-block">ดูรายละเอียด</button>
                                             </div>
@@ -211,12 +231,11 @@
                                                 <h5 class="title">หมายเลขคำสั่งซื้อ 100062396</h5>
                                                 <label>ยอดชำระเงินทั้งหมด</label>
                                                 <h5>฿11,400</h5>
-                                                <label>วันที่ 7 ก.พ. 64</label>
+                                                <label>07/02/2564</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <strong>สถานะคำสั่งซื้อ: <span
-                                                            class="order-cancel">ยกเลิกแล้ว</span></strong>
+                                                    <strong>สถานะคำสั่งซื้อ: <span class="order-cancel">ยกเลิก</span></strong>
                                                 </div>
                                                 <button class="btn btn-secondary btn-block">ดูรายละเอียด</button>
                                             </div>
@@ -224,7 +243,27 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="waiting" role="tabpanel" aria-labelledby="waiting-tab">
+                            <div class="tab-pane fade" id="waiting-confirm" role="tabpanel" aria-labelledby="waiting-confirm-tab">
+                                <div class="card form-group">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h5 class="title">หมายเลขคำสั่งซื้อ 100042396</h5>
+                                                <label>ยอดชำระเงินทั้งหมด</label>
+                                                <h5>฿2,500</h5>
+                                                <label>05/02/2564</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <strong>สถานะคำสั่งซื้อ: <span class="order-waiting-confirm">รอการอนุมัติ</span></strong>
+                                                </div>
+                                                <button class="btn btn-secondary btn-block">ดูรายละเอียด</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="waiting-payment" role="tabpanel" aria-labelledby="waiting-payment-tab">
                                 <div class="card form-group">
                                     <div class="card-body">
                                         <div class="row">
@@ -232,12 +271,11 @@
                                                 <h5 class="title">หมายเลขคำสั่งซื้อ 100072396</h5>
                                                 <label>ยอดชำระเงินทั้งหมด</label>
                                                 <h5>฿2,500</h5>
-                                                <label>วันที่ 5 ก.พ. 64</label>
+                                                <label>05/02/2564</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <strong>สถานะคำสั่งซื้อ: <span
-                                                            class="order-waiting">รอการชำระเงิน</span></strong>
+                                                    <strong>สถานะคำสั่งซื้อ: <span class="order-waiting-payment">รอการชำระเงิน</span></strong>
                                                 </div>
                                                 <button class="btn btn-secondary btn-block">ดูรายละเอียด</button>
                                             </div>
@@ -253,12 +291,11 @@
                                                 <h5 class="title">หมายเลขคำสั่งซื้อ 100082396</h5>
                                                 <label>ยอดชำระเงินทั้งหมด</label>
                                                 <h5>฿1,400</h5>
-                                                <label>วันที่ 2 ก.พ. 64</label>
+                                                <label>02/02/2564</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <strong>สถานะคำสั่งซื้อ: <span
-                                                            class="order-success">สำเร็จแล้ว</span></strong>
+                                                    <strong>สถานะคำสั่งซื้อ: <span class="order-success">สำเร็จ</span></strong>
                                                 </div>
                                                 <button class="btn btn-secondary btn-block">ดูรายละเอียด</button>
                                             </div>
@@ -274,12 +311,11 @@
                                                 <h5 class="title">หมายเลขคำสั่งซื้อ 100062396</h5>
                                                 <label>ยอดชำระเงินทั้งหมด</label>
                                                 <h5>฿11,400</h5>
-                                                <label>วันที่ 7 ก.พ. 64</label>
+                                                <label>07/02/2564</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <strong>สถานะคำสั่งซื้อ: <span
-                                                            class="order-cancel">ยกเลิกแล้ว</span></strong>
+                                                    <strong>สถานะคำสั่งซื้อ: <span class="order-cancel">ยกเลิก</span></strong>
                                                 </div>
                                                 <button class="btn btn-secondary btn-block">ดูรายละเอียด</button>
                                             </div>
